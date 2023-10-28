@@ -1,8 +1,7 @@
 import {useState} from "react"
 import ProjectCard from "./ProjectCard"
-import brockSamson from "./brock_samson.png"
-import artProject from "./art_project.png"
-
+import brockSamson from "\brock_samson.png"
+import artProject from "\art_project.png"
 export default function Projects() {
     const divStyle = {
         paddingLeft : "90px",
