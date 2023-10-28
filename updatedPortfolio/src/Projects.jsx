@@ -1,7 +1,7 @@
 import {useState} from "react"
 import ProjectCard from "./ProjectCard"
-import brockSamson from "\brock_samson.png"
-import artProject from "\art_project.png"
+// import brockSamson from "\brock_samson.png"
+// import artProject from "\art_project.png"
 export default function Projects() {
     const divStyle = {
         paddingLeft : "90px",
@@ -12,7 +12,7 @@ export default function Projects() {
     }
     const projects = [
         {
-            img : artProject,
+            img : "../public/art_project.png",
             title : "Art Website",
             description : "On this website I am looping over an api to display art made by people with various mental illnesses. This website includes a homepage, a navbar, a footer, and different pages for different mental illnesses.",
             viewLive : "https://my-art-collection.onrender.com/",
@@ -23,7 +23,7 @@ export default function Projects() {
         },
         {
             // <img src="brock_samson.png" />
-            img : brockSamson, 
+            img : "../public/brock_samson.png", 
             //code is not happy here
             title : "Brock Samson Simulator",
             description : "using node.js and vanilla javascript string methods, I have created a terminal RPG. In this RPG, the user can talk to various NPCS, check their status along with the status of enemies, and most importantly fight the NPCs through fun randomized narration until the user either dies or defeats every NPC there is to fight.",
