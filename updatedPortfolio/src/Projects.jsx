@@ -26,7 +26,7 @@ export default function Projects() {
         },
         {
             // <img src="brock_samson.png" />
-            img : artProject, 
+            img : brockSamson, 
             //code is not happy here
             title : "Brock Samson Simulator",
             description : "using node.js and vanilla javascript string methods, I have created a terminal RPG. In this RPG, the user can talk to various NPCS, check their status along with the status of enemies, and most importantly fight the NPCs through fun randomized narration until the user either dies or defeats every NPC there is to fight.",
