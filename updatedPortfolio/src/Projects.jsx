@@ -1,3 +1,4 @@
+import React from "react"
 import {useState} from "react"
 import ProjectCard from "./ProjectCard"
 // import brockSamson from "\brock_samson.png"
@@ -40,8 +41,44 @@ export default function Projects() {
             <ProjectCard gridColumn = {item.gridColumn} img = {item.img} title = {item.title} description = {item.description} viewLive = {item.viewLive} viewCode = {item.viewCode} />
         )
     })
+
+
+
+
+
+
+    const [divState, setDivState] = React.useState(divStyle)
+    const mediaQuery = window.matchMedia('(max-width: 600px)')
+
+
+    
+
+
+      function queryMatcher() {
+        if (mediaQuery.matches) {
+            const smallDivStyle = {
+                "textAlign" : "center",
+                "fontSize" : "20px",
+                "paddingTop" : "4px",
+                "paddingBottom" : "5px",
+                margin : "20px"
+            }
+            setDivState(smallDivStyle)
+        }
+      }
+      React.useEffect(queryMatcher, [])
+
+
+
+      //this isnt done!!!!!
+
+
+
+
+
+    
     return (
-        <div style = {divStyle} >
+        <div style = {divState} >
             {projectMap}
         </div>
     )
