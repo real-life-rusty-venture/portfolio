@@ -90,8 +90,8 @@ export default function NavBar() {
             <NavLink to = "/" style = {link1State} >HOME</NavLink>
             <NavLink to = "/Projects" style = {linkState} >PROJECTS</NavLink>
             <NavLink to = "/ContactMe" style = {linkState} >CONTACT</NavLink>
-            <a style = {linkState} href = "https://github.com/notifications?query=repo%3Areal-life-rusty-venture%2Fvschool-repository">GITHUB</a>
-            <a style = {linkState} href = "https://www.linkedin.com/in/arianna-brunson-380595187/">LINKEDIN</a>
+            <a style = {linkState} href = "https://github.com/real-life-rusty-venture/real-life-rusty-venture" target = "_blank" rel = "noreferrer">GITHUB</a>
+            <a style = {linkState} href = "https://www.linkedin.com/in/scoutastic/" target = "_blank" rel = "noreferrer" >LINKEDIN</a>
         </nav>
     )
 }

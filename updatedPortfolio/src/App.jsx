@@ -8,7 +8,8 @@ function App() {
     backgroundColor : "#E5E4E2",
     color : "#1B1212",
     // font : "#36454F"
-    font : "Arial"
+    font : "Arial",
+    height: "100vh"
 }
   return (
     <div style = {divStyle}>

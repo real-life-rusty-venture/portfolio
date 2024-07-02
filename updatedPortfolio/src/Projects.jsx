@@ -5,13 +5,15 @@ import ProjectCard from "./ProjectCard"
 // import artProject from "\art_project.png"
 import brockSamson from "../public/brock_samson.png"
 import artProject from "../public/art_project.png"
+// import catsWebsite from "C:/Users/bensh/OneDrive/portfolio_real/updatedPortfolio/src/cats_webiste.png"
+import catsWebsite from "../public/cats_website.png"
 export default function Projects() {
     const divStyle = {
         paddingLeft : "90px",
         paddingRight : "150px",
         display : "grid",
-        gridTemplateColumns : "1fr 1fr 1fr",
-        gridTemplateRows : "2 1fr"
+        gridTemplateColumns : "1fr 1fr",
+        gridTemplateRows : "1fr"
     }
     const projects = [
         {
@@ -26,13 +28,13 @@ export default function Projects() {
         },
         {
             // <img src="brock_samson.png" />
-            img : brockSamson, 
+            img : catsWebsite, 
             //code is not happy here
-            title : "Brock Samson Simulator",
-            description : "using node.js and vanilla javascript string methods, I have created a terminal RPG. In this RPG, the user can talk to various NPCS, check their status along with the status of enemies, and most importantly fight the NPCs through fun randomized narration until the user either dies or defeats every NPC there is to fight.",
-            viewLive : "",
+            title : "Cats Website",
+            description : "On this website, I am utilizing various dependencies like vite, mongodb,  mongoose, bcrypt, cors, dotenv, express, express-jwt, morgan, and more, to create a website where the user can make an account, log in, and post, edit, view, and delete pictures of cats.",
+            viewLive : "https://catsanddogslivingtogethermasshysteria.onrender.com/Profile",
             //learn how to do the viewLive
-            viewCode : "https://github.com/real-life-rusty-venture/vschool-repository/blob/main/brock_sampson_simulator/brock_sfw.js",
+            viewCode : "https://github.com/real-life-rusty-venture/catproject/tree/master",
             gridColumn : "2/3",
             gridRow : "2/3"
         }
