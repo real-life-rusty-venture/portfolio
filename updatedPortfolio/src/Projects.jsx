@@ -13,7 +13,9 @@ export default function Projects() {
         paddingRight : "150px",
         display : "grid",
         gridTemplateColumns : "1fr 1fr",
-        gridTemplateRows : "1fr"
+        gridTemplateRows : "1fr",
+        backgroundColor : "#E5E4E2",
+        height : "100vh"
     }
     const projects = [
         {
@@ -27,16 +29,13 @@ export default function Projects() {
             gridRow : "1/2"
         },
         {
-            // <img src="brock_samson.png" />
             img : catsWebsite, 
-            //code is not happy here
             title : "Cats Website",
             description : "On this website, I am utilizing various dependencies like vite, mongodb,  mongoose, bcrypt, cors, dotenv, express, express-jwt, morgan, and more, to create a website where the user can make an account, log in, and post, edit, view, and delete pictures of cats.",
             viewLive : "https://catsanddogslivingtogethermasshysteria.onrender.com/Profile",
-            //learn how to do the viewLive
             viewCode : "https://github.com/real-life-rusty-venture/catproject/tree/master",
             gridColumn : "2/3",
-            gridRow : "2/3"
+            gridRow : "1/2" //this could be 2/3 and it wouldnt make a difference
         }
     ]
     const [projectData, setProjectData] = useState(projects)
@@ -65,7 +64,9 @@ export default function Projects() {
                 "fontSize" : "20px",
                 "paddingTop" : "4px",
                 "paddingBottom" : "5px",
-                margin : "20px"
+                margin : "20px",
+                height: "100vh",
+                backgroundColor : "#E5E4E2"
             }
             setDivState(smallDivStyle)
         }
