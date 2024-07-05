@@ -98,7 +98,7 @@ export default function Projects() {
 
     
     return (
-        <div style = {smallDivStyle} >
+        <div style = {divState} >
             {projectMap}
         </div>
     )
