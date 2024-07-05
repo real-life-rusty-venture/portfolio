@@ -13,7 +13,7 @@ export default function Projects() {
         paddingRight : "150px",
         display : "grid",
         gridTemplateColumns : "1fr 1fr",
-        gridTemplateRows : "1fr",
+        // gridTemplateRows : "1fr",
         backgroundColor : "#E5E4E2",
         height : "100vh"
     }
@@ -56,15 +56,23 @@ export default function Projects() {
 
     
 
-
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 800)
+    React.useEffect(() => {
+        function CheckIfMobile() {
+            setIsMobile(window.innerWidth <= 800)
+            console.log("im checking if its mobile")
+            console.log(isMobile, "isMobile")
+        }
+    })
       function queryMatcher() {
-        if (mediaQuery.matches) {
+        console.log(divState, "arg here be the divState")
+        if (isMobile == true) {
             const smallDivStyle = {
-                "textAlign" : "center",
-                "fontSize" : "20px",
-                "paddingTop" : "4px",
-                "paddingBottom" : "5px",
-                margin : "20px",
+                textAlign : "center",
+                fontSize : "20px",
+                // "paddingTop" : "4px",
+                // "paddingBottom" : "5px",
+                // margin : "20px",
                 height: "100vh",
                 backgroundColor : "#E5E4E2"
             }
@@ -75,15 +83,22 @@ export default function Projects() {
 
 
 
-      //this isnt done!!!!!
 
-
+      const smallDivStyle = {
+        textAlign : "center",
+        fontSize : "20px",
+        // "paddingTop" : "4px",
+        // "paddingBottom" : "5px",
+        // margin : "20px",
+        // height: "100vh",
+        backgroundColor : "#E5E4E2"
+    }
 
 
 
     
     return (
-        <div style = {divState} >
+        <div style = {smallDivStyle} >
             {projectMap}
         </div>
     )
