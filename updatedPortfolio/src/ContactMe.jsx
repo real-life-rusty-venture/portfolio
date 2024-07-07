@@ -18,7 +18,6 @@ export default function ContactMe() {
         paddingLeft : "90px",
         paddingRight : "90px",
         paddingTop : "55px",
-        height : "550px"
     }
     const inputStyle = {
         display : "block",

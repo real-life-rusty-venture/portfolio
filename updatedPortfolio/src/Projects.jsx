@@ -71,9 +71,9 @@ export default function Projects() {
                 textAlign : "center",
                 fontSize : "20px",
                 // "paddingTop" : "4px",
-                // "paddingBottom" : "5px",
-                // margin : "20px",
-                height: "100vh",
+                // "paddingBottom" : "px",
+                marginBottom : "20px",
+                // height: "100vh",
                 backgroundColor : "#E5E4E2"
             }
             setDivState(smallDivStyle)
