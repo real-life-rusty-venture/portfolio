@@ -96,7 +96,7 @@ export default function ContactMe() {
 
 
     return (
-        <form action="https://formsubmit.co/ariannabrunson47@gmail.com" method="POST" style = {formStyleState}>
+        <form action="https://formsubmit.co/ariannabrunson47@gmail.com" method="POST" target = "_blank" style = {formStyleState}>
             <input name = "name" placeholder = "name" style = {inputStyleState} />
             <input name = "phoneNumber" placeholder = "phone number" style = {inputStyleState} />
             <input name = "email" placeholder = "email" style = {inputStyleState} />

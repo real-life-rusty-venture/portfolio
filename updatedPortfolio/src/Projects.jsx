@@ -98,7 +98,7 @@ export default function Projects() {
 
     
     return (
-        <div style = {divState} >
+        <div style = {divStyleState} >
             {projectMap}
         </div>
     )
